@@ -43,7 +43,6 @@ public class TaskManager {
             out.writeObject(tasks);
         } catch (IOException e) {
             System.out.println("Error saving tasks.");
-            e.printStackTrace();
         }
     }
 
@@ -55,7 +54,6 @@ public class TaskManager {
             System.out.println("No previous tasks found. Starting again.");
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error loading tasks.");
-            e.printStackTrace();
         }
     }
 
